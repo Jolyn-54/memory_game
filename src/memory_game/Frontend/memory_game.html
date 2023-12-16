@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Board Game</title>
+    <link rel="stylesheet" href="memory_game.css" />
+    <link rel="stylesheet" href="css/matchgame.css" />
+
+
+</head>
+<body>
+
+<header>
+    <div>
+        <h1>Memory Game</h1>
+    </div>
+    <div>
+        Zurück zur
+        <button onclick="goBack()"> Startseite</button>
+    </div>
+</header>
+
+<div>
+    <span type="text" id="headerRoom">roomName</span> <br>
+    <span type="text" id="headerUser">username</span> <br>
+    <span type="text" id="score">Total Score</span>
+</div>
+
+
+<div id="container">
+    <div id="sidebar">
+        <!-- Sidebar content -->
+        <h2>Game Information</h2>
+        <p>Turn: <span id="turn">Player 1</span></p>
+        <p>Score: <span id="score">0</span></p>
+        <p>Number of Players: <span id="playerCount">0</span></p>
+        <button id="startButton" onclick="startGame()">Start Game</button>
+    </div>
+    <div id="board">
+        <div id="cards">
+            <div class="card">
+                <div class="face front"></div>
+                <div class="face back"></div>
+            </div> <!-- .card -->
+        </div> <!-- #cards -->
+    </div>
+</div>
+
+<script src="memory_game.js"></script>
+<script src="js/matchgame.js"></script>
+
+</body>
+</html>
